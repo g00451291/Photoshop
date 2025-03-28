@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirm - Sweet Encounter Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Booking Successful！</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="booking.html">Booking</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Thanks for you booking！</h2>
+        <p id="bookingDetails"></p>
+    </main>
+    <script>
+        let booking = JSON.parse(localStorage.getItem("booking"));
+        if (booking) {
+            document.getElementById("bookingDetails").innerText = 
+                `Name: ${booking.name}\nEmail: ${booking.email}\nEvents: ${booking.eventChoice}\nAmount: ${booking.people}\nPrice: $${booking.totalPrice.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>

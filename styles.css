@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf2f8; /* Light pink background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #e91e63; /* Main pink color for headers */
+}
+
+/* Header */
+header {
+    background-color: #ffffff; /* White background for the header */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #e91e63; /* Pink border */
+}
+
+header nav a {
+    color: #e91e63; /* Pink for nav links */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #d81b60; /* Darker pink on hover */
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    background-color: #e91e63; /* Pink button */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.btn:hover {
+    background-color: #d81b60; /* Darker pink on hover */
+}
+
+/* Booking Form */
+form {
+    display: inline-block;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #e91e63; /* Pink button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+form button:hover {
+    background-color: #d81b60; /* Darker pink on hover */
+}
+
+/* Confirmation Page */
+#bookingDetails {
+    font-size: 1.2em;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
